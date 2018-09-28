@@ -9,7 +9,7 @@ $(function () {
     // change the URL to the new route
     $.get("/posts/" + id + "/post_data", function(data) {
       // Replace text of body-id div
-      $("#body-" + id).text(data);
+      $("#body-" + id).html(data["description"]);
     });
   });
 });
