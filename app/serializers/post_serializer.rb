@@ -6,6 +6,6 @@ class PostSerializer
     serialized_post += '"description": "' + post.description + '", '
     serialized_post += '"author": {'
     serialized_post += '"name": "' + post.author.name + '"} '
-    serialized_post += '}'    
+    serialized_post += '}'
   end
 end
