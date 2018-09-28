@@ -29,7 +29,7 @@ class PostsController < ApplicationController
   def post_data
     post = Post.find(params[:id])
     render json: PostSerializer.serialize(post)
-  end 
+  end
 
   def body
      post = Post.find(params[:id])
